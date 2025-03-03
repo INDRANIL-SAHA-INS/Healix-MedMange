@@ -5,7 +5,7 @@ from io import BytesIO
 from supabase_client import supabase
 from groq import Groq
 
-os.environ["GROQ_API_KEY"] = "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"
+os.environ["GROQ_API_KEY"] = "add your own key"
 client = Groq(api_key=os.getenv("GROQ_API_KEY"))
 
 model_a=model_b=model_c=model_d=model_e="llama-3.3-70b-versatile"
