@@ -33,7 +33,7 @@ Download the .env file from the google drive link sent paste it in the Backend f
 
 Download the zip file for copy paste in the terminal
 ```bash
-  https://github.com/jhinu55/HEALIX.git
+https://github.com/INDRANIL-SAHA-INS/Healix-MedMange.git
 ```
 USING LOCAL LLMS(Only if you have gpu , can run on cpu but slow)
 
@@ -103,9 +103,7 @@ Github: https://github.com/INDRANIL-SAHA-INS
 
 Linkedin : https://www.linkedin.com/in/indranilsaha6
 
-Shreya Baid: 
 
-Github: https://github.com/jhinu55
 
 
 
