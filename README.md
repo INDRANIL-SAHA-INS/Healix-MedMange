@@ -107,7 +107,7 @@ Shreya Baid:
 
 Github: https://github.com/jhinu55
 
-Linkedin: https://www.linkedin.com/in/shreya-baid-550443351/
+
 
 
 
