@@ -12,7 +12,7 @@ from sklearn.impute import SimpleImputer
 import json
 import time
 
-os.environ["GROQ_API_KEY"] = "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"
+os.environ["GROQ_API_KEY"] = "add your own key"
 client = Groq(api_key=os.getenv("GROQ_API_KEY"))
 
 # Configure logging
