@@ -60,7 +60,7 @@ graph TD
 
 ---
 
-## 🚀 Key Features (Pro-Developer Showoff)
+## 🚀 Core Capabilities & Technical Features
 
 ### 🩺 1. Specialist-Routed Medical Assistant
 Instead of a generic chatbot, Healix uses a **specialist routing architecture**. Queries are dynamically classified and sent to fine-tuned specialist prompts:
@@ -80,7 +80,7 @@ Healix performs **aggregate data analysis** at the village/region level.
 
 ---
 
-## 📦 Tech Stack & Skills Used
+## 📦 Technology Stack & Implementation
 
 - **Frontend:** React 18, Vite, TypeScript, Tailwind CSS, Framer Motion, Lucide React, Chart.js.
 - **Backend:** Python, Flask, Supabase SDK.
