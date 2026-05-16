@@ -1,114 +1,148 @@
+# <p align="center">🏥 HEALIX: AI-Driven Rural Healthcare Intelligence</p>
 
-# HEALIX
+<p align="center">
+  <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
+  <img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" />
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
+  <img src="https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white" />
+  <img src="https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white" />
+  <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" />
+</p>
 
-Healix is an AI-powered mobile health platform that helps traveling doctors provide consistent and efficient healthcare across multiple rural communities. It enables seamless patient data collection, storage, and retrieval, eliminating the need for paper records. The platform supports chronic disease tracking, AI-driven insights for predictive health analysis, and automated alerts for timely follow-ups. With a focus on Responsible AI and data privacy, Healix empowers healthcare providers with decision support tools to improve patient outcomes. Designed for commercial deployment, it ensures scalability and reliability for real-world medical use.
+---
 
+## 🌟 Overview
 
-## Features
+**Healix** is an industry-grade, AI-powered healthcare platform engineered to solve the "last-mile" medical connectivity problem in rural communities. By equipping traveling doctors with **clinical decision support tools** and **Vision AI**, Healix transforms chaotic paper-based records into a structured, predictive data ecosystem.
 
-- *User Hierarchy:* The system includes three main user types: Admin, Doctor, and Assistant. Admins can add real, qualified doctors and community health workers (assistants) from various areas.
-- *Appointment Management:* Both Admins and Doctors can add and manage appointments before visits.
-- *Health Report Form:* Doctors can create comprehensive health reports with sections for:
-  - Basic Info
-  - Vital Signs
-  - General Health
-  - Pain & Discomfort
-  - Digestion
-  - Chronic Conditions
-  - Lifestyle
-  - Women's Health
-  - Family Health
-  - Mental Health
-  - Heart Health
-  - Vaccination History
-  - Prescription
-- *Patient Data Tracking:* The health report is stored safely in the database and can be retrieved using filters (date, region, name, criticality). The system supports predictions for health deterioration and arranges appointments based on urgency.
-- *Messaging & Chat:* Doctors and Assistants can message each other. There is also a dedicated AI chat feature for helping doctors analyze patient data and improve diagnosis.
-- *AI-Powered Insights:* The AI model is trained on extensive medical data and helps doctors manage chronic diseases, predict health deterioration, and offer better treatment recommendations.
-## Installation
+> "Healix doesn't just store data; it predicts health outcomes and orchestrates care for the underserved."
 
-BACKEND
+---
 
-Download the .env file from the google drive link sent paste it in the Backend folder.
+## 🎯 The Problem & The Solution
 
-Download the zip file for copy paste in the terminal
-```bash
-  https://github.com/jhinu55/HEALIX.git
-```
-USING LOCAL LLMS(Only if you have gpu , can run on cpu but slow)
+| ❌ The Problem | ✅ The Healix Solution |
+| :--- | :--- |
+| **Information Asymmetry:** Rural doctors lack patient history. | **Unified Digital Records:** Instant access to comprehensive clinical history. |
+| **Late Detection:** Chronic diseases go unnoticed until emergencies. | **Predictive Risk Scoring:** AI-driven early warning systems for vitals. |
+| **Expertise Gap:** Limited access to specialists in the field. | **Multi-Specialist AI Agent:** LLM-powered specialist routing for diagnosis. |
+| **Paper-Based Chaos:** Records are lost, damaged, or unreadable. | **Secure Cloud Infrastructure:** Real-time sync with Supabase RLS security. |
 
-Install ollama (command for linux . Can be downloaded from https://ollama.com/download)
-```bash
-  curl -fsSL https://ollama.com/install.sh | sh
-```
-Pull the required models
-```bash
-  ollama pull mistral
-  ollama pull llama3
-  ollama pull llava
-```
+---
 
-USING FREE GROQ API KEY
+## 🛠️ Advanced Technical Architecture
 
-Go to https://console.groq.com/keys. Generate a api key and save it.
+Healix is built on a **Decoupled AI-Middleware Architecture**, ensuring high availability and low latency even in remote areas.
 
-Delete the medical_chat.py and table_analysis.py.Cut and paste the files inside groq folder to Backend
+```mermaid
+graph TD
+    subgraph "Frontend (React + TS)"
+        A[Mobile-First SPA] --> B[Framer Motion Animations]
+        A --> C[Chart.js Visualizations]
+    end
 
-Create a .env file store your api key as GROQ_API_KEY="<paste actual api key here>" 
+    subgraph "Intelligent Middleware (Flask)"
+        D[API Orchestrator] --> E[Data Preprocessing - Scikit-learn]
+        D --> F[Specialist Routing Logic]
+    end
 
-You are Good to go now:)
+    subgraph "Cloud & Intelligence"
+        G[(Supabase Postgres)]
+        H[Groq LLM Engine]
+        I[Vision AI - Llama 3.2]
+    end
 
-Extract the file and open in VS CODE and setup the Backend by creating a virtual environment and downloading the required libraries(commands are for linux user).
-```bash
-  cd Backend 
-  python3 -m venv venv
-  source venv/bin/activate
-  pip install -r requirements.txt
-```
-Run the Backend
-```bash
-  python3 app.py 
-```
-OR
-```bash
-  python app.py
+    A <==> D
+    D <==> G
+    D <==> H
+    D <==> I
 ```
 
+---
 
+## 🚀 Key Features (Pro-Developer Showoff)
 
-FRONTEND
+### 🩺 1. Specialist-Routed Medical Assistant
+Instead of a generic chatbot, Healix uses a **specialist routing architecture**. Queries are dynamically classified and sent to fine-tuned specialist prompts:
+- **Symptom Specialist** (Llama 3.3 70B)
+- **Diagnosis Specialist** (Mixtral 8x7B)
+- **Treatment & Precaution Specialists**
+- **Vision AI integration** for real-time medical image analysis (Llama 3.2 Vision).
 
-Download the .env file from the google drive link(given in ppt) sent paste it in the Frontend folder.
+### 📊 2. Regional Health Intelligence
+Healix performs **aggregate data analysis** at the village/region level.
+- **Outlier Detection:** Automatically flags abnormal health spikes in specific communities.
+- **Chronic Disease Correlation:** Identifies relationships between lifestyle and disease patterns using Python's data science stack.
 
-Open a folder in a new Vs Code window.Open the project folder. Type the following in the terminal
-```bash
-  cd FRONTEND1
-  npm install init
-```
+### 🔐 3. Enterprise-Grade Security
+- **Supabase RLS (Row Level Security):** Ensures that doctors only see their assigned patients, maintaining strict HIPPA-like data privacy.
+- **Vectorized Context Management:** Progressive summarization of patient history to maintain clinical accuracy without token overflow.
 
-For test run, the logoin credentials are written in the google drive shared in ppt
+---
 
+## 📦 Tech Stack & Skills Used
 
-## Technologies used
-Frontend: React.js,Vite,Typescript,Tailwind css, Lucid, React router
+- **Frontend:** React 18, Vite, TypeScript, Tailwind CSS, Framer Motion, Lucide React, Chart.js.
+- **Backend:** Python, Flask, Supabase SDK.
+- **AI/ML:** Groq API (Llama 3.3, 3.2, Mixtral), Scikit-learn, Pandas, NumPy, LangChain.
+- **Tools:** Git, Mermaid.js, Docker-ready structure.
 
-Backend:Supabase,Node.js,Python,Flask,Lanchain,Tensorflow,Keras,Numpy,Pandas
+---
 
-## Contact
+## ⚙️ Installation & Setup
 
+### 🖥️ BACKEND SETUP
 
-Indranil Saha:
+1. **Environment Configuration:**
+   Download the `.env` file from the provided Google Drive link and paste it into the `Backend` folder.
 
-Github: https://github.com/INDRANIL-SAHA-INS
+2. **Clone & Prep:**
+   ```bash
+   https://github.com/jhinu55/HEALIX.git
+   cd Backend
+   ```
 
-Linkedin : https://www.linkedin.com/in/indranilsaha6
+3. **Inference Options:**
+   - **LOCAL LLMS:** Install [Ollama](https://ollama.com/download) and pull models:
+     ```bash
+     ollama pull mistral
+     ollama pull llama3
+     ollama pull llava
+     ```
+   - **GROQ API (Recommended for Speed):** 
+     - Generate a key at [Groq Console](https://console.groq.com/keys).
+     - Update `.env`: `GROQ_API_KEY="your_key_here"`
+     - Swap files from the `groq` folder to the `Backend` root as per instructions.
 
-Shreya Baid: 
+4. **Initialize Server:**
+   ```bash
+   python3 -m venv venv
+   source venv/bin/activate  # Or venv\Scripts\activate on Windows
+   pip install -r requirements.txt
+   python app.py
+   ```
 
-Github: https://github.com/jhinu55
+### 🌐 FRONTEND SETUP
 
-Linkedin: https://www.linkedin.com/in/shreya-baid-550443351/
+1. **Environment Configuration:**
+   Download the `.env` file from the Google Drive link and paste it into the `Frontend` folder.
 
+2. **Install & Run:**
+   ```bash
+   cd Frontend
+   npm install
+   npm run dev
+   ```
 
+---
 
+## 👨‍💻 Developed By
 
+**Indranil Saha**
+- [GitHub](https://github.com/INDRANIL-SAHA-INS) | [LinkedIn](https://www.linkedin.com/in/indranilsaha6)
+
+**Shreya Baid**
+- [GitHub](https://github.com/jhinu55) | [LinkedIn](https://www.linkedin.com/in/shreya-baid-550443351/)
+
+---
+<p align="center">Made with ❤️ for Global Health Equity</p>

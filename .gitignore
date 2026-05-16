@@ -1,0 +1,6 @@
+# Root .gitignore
+project_overview.md
+.vscode/
+Backend/venv/
+Backend/__pycache__/
+Backend/flask_session/
