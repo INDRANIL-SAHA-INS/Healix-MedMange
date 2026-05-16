@@ -141,8 +141,7 @@ Healix performs **aggregate data analysis** at the village/region level.
 **Indranil Saha**
 - [GitHub](https://github.com/INDRANIL-SAHA-INS) | [LinkedIn](https://www.linkedin.com/in/indranilsaha6)
 
-**Shreya Baid**
-- [GitHub](https://github.com/jhinu55) | [LinkedIn](https://www.linkedin.com/in/shreya-baid-550443351/)
+
 
 ---
-<p align="center">Made with ❤️ for Global Health Equity</p>
+<p align="center">Made with love for Global Health Equity</p>
