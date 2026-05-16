@@ -98,7 +98,7 @@ Healix performs **aggregate data analysis** at the village/region level.
 
 2. **Clone & Prep:**
    ```bash
-   https://github.com/jhinu55/HEALIX.git
+   https://github.com/INDRANIL-SAHA-INS/Healix-MedMange.git
    cd Backend
    ```
 
